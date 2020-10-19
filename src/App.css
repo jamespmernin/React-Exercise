@@ -1,0 +1,126 @@
+.App{
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  font-family: "Kalam", cursive;
+  margin-left: -2px;
+  margin-right: -2px;
+  margin-top: -2px;
+  box-shadow: 1px 1px 1px 0.3px #cecece;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: -3px;
+  flex: 1 1;
+  max-width: 30vw;
+  transition: all .25s;
+}
+
+h2 {
+  font-size: 24px;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 28px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+img {
+  height: 500px;
+}
+
+#title {
+padding-left: 24px;
+}
+input {
+  width: 70vw;
+  font-size: 18px;
+  letter-spacing: .1px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin: 40px;
+}
+
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.mappedProducts { 
+  margin: 20px;
+  box-shadow: 0 0 5px lightslategray;
+  margin-bottom: 50px;
+  transition: all .2s ease-in-out;
+}
+
+.mappedProducts:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+}
+
+.homeImage {
+  height: auto;
+  max-width: 300px;
+  padding:20px
+}
+
+.homeName {
+  font-size: large;
+}
+
+.homePrice {
+  font-size: x-large;
+}
+
+.infoMap {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  font-weight: 300;
+}
+
+.infoProducts {
+  display: flex;
+  flex-direction:column;
+  width: 500px;
+  padding-top: 120px;
+}
+
+.infoImage{
+  width: 500px;
+  margin-right: 30px;
+}
+
+.infoPrice{
+  margin-top: 0px;
+}
+
+@media (min-width: 1014px){
+.infoProducts {
+  flex-direction: row;
+  width: 70vw;
+}
+} 
