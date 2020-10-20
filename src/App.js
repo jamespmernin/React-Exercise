@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Route } from 'react-router-dom'
 import axios from 'axios';
-import Paintings from './components/Paintings.jsx'
+import Paintings from './components/Paintings'
 import PaintingsDetail from './components/PaintingsDetail'
 import './App.css'
 

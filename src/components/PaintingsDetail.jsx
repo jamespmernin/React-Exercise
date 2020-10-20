@@ -6,11 +6,11 @@ function PaintingsDetail(props) {
     <div className="map">
       {
         props.paintings.map((painting, i) =>
-          <Route key={i} exact path={`/${i}`} >
+          <Route key={i} exact path={`/${i}`} > {/* Forming the route conditionally allows for multiple route paths to be produced */}
             <div key={i} className="mappedPaintings">
-              <img className="mappedData" key={i} src={painting.imgURL} alt={painting.name} />
+              <img className="mappedData" key={i} src={painting.imgURL} alt={painting.name} /> {/* Keys are needed to avoid warnings about children that are not unique */}
               <h1 className="mappedData" key={painting._id}>{painting.name}</h1>
-              <h3 className="mappedData" key={painting.price}>$ {painting.price}</h3>
+              <h3 className="mappedData" key={painting.price}>${painting.price}</h3>
               <small className="mappedData" key={painting.desc}>{painting.description}</small>
             </div>
           </Route>

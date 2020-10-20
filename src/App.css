@@ -42,7 +42,7 @@ h3 {
 }
 
 img {
-  height: 500px;
+  height: 500px; /* Setting a height here avoids paintings of unequal size */
 }
 
 #title {
@@ -118,7 +118,7 @@ input {
   margin-top: 0px;
 }
 
-@media (min-width: 1014px){
+@media (min-width: 1014px){ /* This media query changes the size of the paintings to adapt to a smaller screen */
 .infoProducts {
   flex-direction: row;
   width: 70vw;

@@ -7,7 +7,7 @@ function Paintings(props) {
     <div>
       <input type="text" placeholder="Search" value={search} onChange={(e) => setSearch(e.target.value)}></input>
       <div className="map">
-        {props.paintings.filter(data => data.name.includes(`${search}`) && data.imgURL !== 'test').map((painting, i) =>
+        {props.paintings.filter(data => data.name.includes(`${search}`) && data.imgURL !== 'test').map((painting, i) => /* Checking data.imgURL not equal to test avoids an error with displaying a bad painting */
           <Link key={i} to={`/${i}`} >
             <div className="painting" key={i} className="mappedProducts">
               <img key={i} src={painting.imgURL} alt={painting.name} />
