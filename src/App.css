@@ -8,10 +8,19 @@ nav {
   margin-left: -2px;
   margin-right: -2px;
   margin-top: -2px;
-  box-shadow: 1px 1px 1px 0.3px #cecece;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  letter-spacing: -3px;
+  flex: 1 1;
+  max-width: 30vw;
+  transition: all .25s;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:hover, a:active { /* Change the link colors and styling no matter what */
   color: #000000;
   text-decoration: none;
 }
@@ -53,7 +62,7 @@ input {
   font-size: 18px;
   letter-spacing: .1px;
   padding: 12px 20px 12px 40px;
-  border: 1px solid #ddd;
+  border: 1px solid #DDDDDD;
   margin: 40px;
 }
 
@@ -66,19 +75,14 @@ input {
 
 .link {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 
-.mappedProducts { 
+.mappedPaintings { 
   margin: 20px;
-  box-shadow: 0 0 5px lightslategray;
+  box-shadow: 0 0 5px #778899;
   margin-bottom: 50px;
   transition: all .2s ease-in-out;
-}
-
-.mappedProducts:hover {
-  transform: scale(1.02);
-  opacity: 0.8;
 }
 
 .homeImage {

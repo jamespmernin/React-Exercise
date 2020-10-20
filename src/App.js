@@ -6,11 +6,11 @@ import PaintingsDetail from './components/PaintingsDetail'
 import './App.css'
 
 function App() {
-  const [paintings, setPaintings] = useState([]);
+  const [paintings, setPaintings] = useState([]); // Easier to change paintings using a state
   useEffect(() => {
     const getPaintings = async () => {
       const apiUrl = 'https://products-api-01.herokuapp.com/api/products';
-      const res = await axios.get(apiUrl);
+      const res = await axios(apiUrl);
       setPaintings(res.data);
     }
     getPaintings();
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="app">
-      <nav><h1>ProductsApp</h1></nav>
+      <nav>ProductsApp</nav>
       <Route exact path="/">
         <Paintings paintings={paintings} />
       </Route>
